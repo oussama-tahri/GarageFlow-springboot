@@ -1,6 +1,6 @@
-# Renault Garage Management System
+# Garage Management System
 
-This microservice manages Renault's network of affiliated garages, their vehicles, and accessories.
+This microservice manages Rn's network of affiliated garages, their vehicles, and accessories.
 
 ## Features
 
@@ -44,10 +44,10 @@ POST /api/garages
 
 ---
 {
-  "name": "Garage Renault",
+  "name": "Garage Rn",
   "address": "1 Street",
   "telephone": "0612344344678",
-  "email": "garage@renault.com",
+  "email": "garage@Rn.com",
   "openingHours": {
     "MONDAY": [
       { "startTime": "08:00", "endTime": "18:00" }
@@ -81,7 +81,7 @@ DELETE /api/garages/{id}
 
 search by brand :
 
-http://localhost:8080/api/garages/search/by-brand?brand=Renault Clio
+http://localhost:8080/api/garages/search/by-brand?brand=Rn Clio
 ```
 
 ### Vehicle Endpoints
@@ -97,7 +97,7 @@ POST /api/garages/{garageId}/vehicles
 ---
 
 {
-  "brand": "Renault Clio",
+  "brand": "Rn Clio",
   "manufacturingYear": 2022,
   "fuelType": "GASOLINE"
 }
