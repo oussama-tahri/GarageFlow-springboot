@@ -1,10 +1,11 @@
-package com.tahrioussama.garage_renault.services;
+package com.tahrioussama.garage_renault.units.services;
 
 import com.tahrioussama.garage_renault.entities.Accessory;
 import com.tahrioussama.garage_renault.entities.Vehicle;
 import com.tahrioussama.garage_renault.enums.AccessoryType;
 import com.tahrioussama.garage_renault.repositories.AccessoryRepository;
 import com.tahrioussama.garage_renault.repositories.VehicleRepository;
+import com.tahrioussama.garage_renault.services.AccessoryService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

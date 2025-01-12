@@ -1,14 +1,16 @@
-package com.tahrioussama.garage_renault.entities;
+package com.tahrioussama.garage_renault.config;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import com.tahrioussama.garage_renault.entities.OpeningTime;
 import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 @Converter(autoApply = true)
 public class OpeningTimeListConverter implements AttributeConverter<List<OpeningTime>, String> {

@@ -37,15 +37,4 @@ public class Garage {
     @OneToMany(mappedBy = "garage", cascade = CascadeType.ALL)
     @JsonManagedReference
     private List<Vehicle> vehicles = new ArrayList<>();
-
-    /**
-     * Business Rule: Maximum 50 vehicles per garage
-     */
-    @PrePersist
-    @PreUpdate
-    private void validateVehicleLimit() {
-        if (vehicles.size() > 50) {
-            throw new IllegalStateException("Un garage ne peut pas avoir plus de 50 véhicules");
-        }
-    }
 }
